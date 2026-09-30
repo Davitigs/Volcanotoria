@@ -1,0 +1,32 @@
+<main class="shell">
+  <app-map
+    [volcanoes]="volcanoes()"
+    [events]="mergedEvents()"
+    [scores]="scores()"
+    (volcanoSelected)="select($event)"
+  />
+  <header class="toolbar">
+    <strong>Volcanic Hazard Monitor</strong>
+    <label
+      >Seismic window
+      <select [value]="days()" (change)="days.set(+$any($event.target).value); load()">
+        <option value="1">Last 24h</option>
+        <option value="7">Last 7d</option>
+        <option value="30">Last 30d</option>
+      </select>
+    </label>
+    <span [class.online]="live.connected()">● {{ live.connected() ? 'Live' : 'Offline' }}</span>
+  </header>
+  @if (loading()) {
+    <div class="status">Loading monitoring data…</div>
+  }
+  @if (error(); as message) {
+    <div class="error">{{ message }}</div>
+  }
+  @if (selected()) {
+    <aside>
+      <app-detail-panel [volcano]="selected()" [score]="score()" (closed)="close()" />
+    </aside>
+  }
+  <footer>Heuristic scores are for demonstration only and are not forecasts.</footer>
+</main>

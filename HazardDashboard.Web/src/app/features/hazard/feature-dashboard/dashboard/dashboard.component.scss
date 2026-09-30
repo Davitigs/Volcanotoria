@@ -1,0 +1,78 @@
+:host {
+  display: block;
+  height: 100vh;
+}
+.shell {
+  height: 100%;
+  position: relative;
+  background: #0f172a;
+}
+.toolbar {
+  position: absolute;
+  z-index: 1000;
+  top: 1rem;
+  left: 1rem;
+  right: 1rem;
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  padding: 0.8rem 1rem;
+  border-radius: 0.6rem;
+  box-shadow: 0 3px 15px #0003;
+}
+.toolbar label {
+  margin-left: auto;
+}
+.toolbar select {
+  margin-left: 0.5rem;
+  padding: 0.25rem;
+}
+.online {
+  color: #16a34a;
+}
+.status,
+.error {
+  position: absolute;
+  z-index: 1100;
+  top: 5rem;
+  left: 1rem;
+  background: #fff;
+  padding: 0.7rem 1rem;
+  border-radius: 0.5rem;
+}
+.error {
+  color: #b91c1c;
+}
+aside {
+  position: absolute;
+  z-index: 1000;
+  top: 5.5rem;
+  right: 1rem;
+  width: 320px;
+  max-height: calc(100% - 7rem);
+  overflow: auto;
+  background: #fff;
+  border-radius: 0.6rem;
+  box-shadow: 0 3px 15px #0003;
+}
+footer {
+  position: absolute;
+  z-index: 1000;
+  bottom: 0.5rem;
+  left: 0.75rem;
+  color: #475569;
+  font-size: 0.75rem;
+}
+.volcano-marker span {
+  display: grid;
+  place-items: center;
+  width: 30px;
+  height: 30px;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 1.1rem;
+  box-shadow: 0 1px 5px #0008;
+}

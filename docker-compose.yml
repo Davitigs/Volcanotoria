@@ -1,0 +1,39 @@
+services:
+  postgres:
+    image: postgis/postgis:16-3.4
+    environment:
+      POSTGRES_DB: hazard_dashboard
+      POSTGRES_USER: hazard
+      POSTGRES_PASSWORD: hazard
+    ports:
+      - "5433:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U hazard -d hazard_dashboard"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+
+  api:
+    build:
+      context: ./HazardDashboard.Api
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ConnectionStrings__HazardDatabase: Host=postgres;Port=5432;Database=hazard_dashboard;Username=hazard;Password=hazard
+    depends_on:
+      postgres:
+        condition: service_healthy
+    ports:
+      - "5001:8080"
+
+  web:
+    build:
+      context: ./HazardDashboard.Web
+    depends_on:
+      - api
+    ports:
+      - "8080:80"
+
+volumes:
+  postgres_data:

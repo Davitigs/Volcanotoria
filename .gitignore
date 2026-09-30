@@ -1,0 +1,30 @@
+# Dependencies and generated output
+node_modules/
+bin/
+obj/
+dist/
+out-tsc/
+.angular/
+.nx/
+coverage/
+TestResults/
+
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+!.env.sample
+*.pfx
+*.p12
+*.pem
+*.key
+appsettings.Local.json
+
+# Machine-specific files
+.DS_Store
+Thumbs.db
+.vs/
+.idea/
+*.user
+*.suo
+*.log

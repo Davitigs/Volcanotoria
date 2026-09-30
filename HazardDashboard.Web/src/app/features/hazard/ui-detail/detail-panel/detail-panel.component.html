@@ -1,0 +1,27 @@
+@if (volcano(); as v) {
+  <section class="panel">
+    <button class="close" type="button" aria-label="Close volcano details" (click)="closed.emit()">
+      ×
+    </button>
+
+    <h2>{{ v.name }}</h2>
+    <p>{{ v.country }} · {{ v.status }}</p>
+
+    <dl>
+      <dt>Elevation</dt>
+      <dd>{{ v.elevationMeters }} m</dd>
+
+      <dt>Last eruption</dt>
+      <dd>{{ v.lastEruptionYear ?? 'Unknown' }}</dd>
+
+      <dt>Heuristic score</dt>
+      <dd>{{ score()?.score ?? 'Loading…' }} / 100</dd>
+    </dl>
+
+    @if (score(); as s) {
+      <h3>Contributing events</h3>
+      <p>{{ s.contributingEvents.length }} events in the last 30 days.</p>
+      <small>{{ s.methodology }}</small>
+    }
+  </section>
+}

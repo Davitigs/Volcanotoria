@@ -1,0 +1,29 @@
+:host {
+  display: block;
+}
+
+.panel {
+  padding: 1.25rem;
+}
+
+.close {
+  float: right;
+  border: 0;
+  background: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+dt {
+  margin-top: 0.7rem;
+  color: #64748b;
+}
+
+dd {
+  margin: 0;
+  font-weight: 600;
+}
+
+small {
+  color: #64748b;
+}

@@ -1,0 +1,22 @@
+[
+  { "name": "Kīlauea", "latitude": 19.421, "longitude": -155.287, "elevationMeters": 1247, "country": "United States", "lastEruptionYear": 2024, "status": "Active" },
+  { "name": "Mauna Loa", "latitude": 19.475, "longitude": -155.608, "elevationMeters": 4169, "country": "United States", "lastEruptionYear": 2022, "status": "Active" },
+  { "name": "Mount Etna", "latitude": 37.751, "longitude": 14.993, "elevationMeters": 3357, "country": "Italy", "lastEruptionYear": 2024, "status": "Active" },
+  { "name": "Stromboli", "latitude": 38.789, "longitude": 15.213, "elevationMeters": 924, "country": "Italy", "lastEruptionYear": 2024, "status": "Active" },
+  { "name": "Vesuvius", "latitude": 40.821, "longitude": 14.426, "elevationMeters": 1281, "country": "Italy", "lastEruptionYear": 1944, "status": "Dormant" },
+  { "name": "Eyjafjallajökull", "latitude": 63.633, "longitude": -19.620, "elevationMeters": 1651, "country": "Iceland", "lastEruptionYear": 2010, "status": "Active" },
+  { "name": "Hekla", "latitude": 63.983, "longitude": -19.666, "elevationMeters": 1491, "country": "Iceland", "lastEruptionYear": 2000, "status": "Active" },
+  { "name": "Fagradalsfjall", "latitude": 63.895, "longitude": -22.269, "elevationMeters": 385, "country": "Iceland", "lastEruptionYear": 2024, "status": "Active" },
+  { "name": "Mount Fuji", "latitude": 35.360, "longitude": 138.727, "elevationMeters": 3776, "country": "Japan", "lastEruptionYear": 1707, "status": "Dormant" },
+  { "name": "Sakurajima", "latitude": 31.593, "longitude": 130.657, "elevationMeters": 1117, "country": "Japan", "lastEruptionYear": 2024, "status": "Active" },
+  { "name": "Aso", "latitude": 32.884, "longitude": 131.104, "elevationMeters": 1592, "country": "Japan", "lastEruptionYear": 2021, "status": "Active" },
+  { "name": "Mayon", "latitude": 13.257, "longitude": 123.685, "elevationMeters": 2463, "country": "Philippines", "lastEruptionYear": 2023, "status": "Active" },
+  { "name": "Taal", "latitude": 14.002, "longitude": 120.993, "elevationMeters": 311, "country": "Philippines", "lastEruptionYear": 2022, "status": "Active" },
+  { "name": "Mount Merapi", "latitude": -7.540, "longitude": 110.446, "elevationMeters": 2910, "country": "Indonesia", "lastEruptionYear": 2024, "status": "Active" },
+  { "name": "Anak Krakatau", "latitude": -6.102, "longitude": 105.423, "elevationMeters": 157, "country": "Indonesia", "lastEruptionYear": 2024, "status": "Active" },
+  { "name": "Mount Agung", "latitude": -8.343, "longitude": 115.508, "elevationMeters": 2997, "country": "Indonesia", "lastEruptionYear": 2019, "status": "Active" },
+  { "name": "Mount Ruapehu", "latitude": -39.281, "longitude": 175.562, "elevationMeters": 2797, "country": "New Zealand", "lastEruptionYear": 2007, "status": "Active" },
+  { "name": "Whakaari / White Island", "latitude": -37.520, "longitude": 177.180, "elevationMeters": 321, "country": "New Zealand", "lastEruptionYear": 2019, "status": "Active" },
+  { "name": "Popocatépetl", "latitude": 19.023, "longitude": -98.622, "elevationMeters": 5393, "country": "Mexico", "lastEruptionYear": 2024, "status": "Active" },
+  { "name": "Colima", "latitude": 19.514, "longitude": -103.620, "elevationMeters": 3850, "country": "Mexico", "lastEruptionYear": 2017, "status": "Active" }
+]
