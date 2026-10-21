@@ -357,3 +357,12 @@ The user clarified this during the phase: Nx is not required. The provisional Nx
 - **Why:** A clean clone should restore dependencies and build outputs; local secrets must not enter version control. The existing demo database credentials remain development-only configuration.
 - **Equivalent:** The same Git rules apply to NestJS/Prisma projects; .NET additionally generates `bin/` and `obj/` directories. EF migrations remain committed, like Prisma migrations.
 - **Interview:** Explain source versus generated artifacts and why `.gitignore` cannot remove secrets already committed to history.
+
+### Phase 20 — Portfolio documentation review
+
+- **File:** `README.md`.
+- **Does:** Adds clone and verification instructions, code navigation, operational caveats, and explicit current limitations; removes broken placeholder image links.
+- **Why:** Reviewers need an accurate starting point. Missing historical data, a development-only dashboard, and incomplete tests should not be presented as finished production functionality.
+- **Equivalent:** A NestJS project likewise needs reproducible setup, readiness semantics, and honest validation evidence; a successful HTTP liveness response does not prove database health.
+- **Interview:** Explain liveness versus readiness and why a rolling live feed does not automatically provide historical backfill.
+- **Validation scope:** Documentation-only phase; commands checked against current configuration, not a new clean-clone end-to-end test. Account-level portfolio review and draft profile text are separate local artifacts, not published in this repository.
